@@ -1,6 +1,4 @@
 theme: jekyll-theme-minimal
 title: Llama Log Book
 description: Loging my ideas and steps in few subjects like Tensor Networks, Deep Learning, RNN's and more.
-
-![Image of white llama]
-(llama.jpg)
+![](llama.jpg)
