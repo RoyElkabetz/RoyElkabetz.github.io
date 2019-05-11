@@ -7,7 +7,7 @@ so this thing is actually writing itself as you can see.
 
 ---
 
-[Tensor Networks][Tensor Networks]
+[Tensor Networks](#tensor-networks)
 
 abcd
 
