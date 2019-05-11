@@ -7,11 +7,41 @@ so this thing is actually writing itself as you can see.
 
 ---
 
-[Tensor Networks](#tensor-networks)
+[Tensor Networks and Probabilistic Graphical Models Duality](#tensor-networks-and-probabilistic-graphical-models-duality) abcd
+[RNN](#rnn)
 
-abcd
+# Tensor Networks and Probabilistic Graphical Models Duality
 
 
-# Tensor Networks
+
+
+
+sd
+s
+ds
+d
+sd
+s
+d
+sd
+s
+d
+sd
+s
+d
+sd
+s
+d
+s
+da
+d
+ad
+
+fas
+f
+a
+
+
+# RNN
 
 
