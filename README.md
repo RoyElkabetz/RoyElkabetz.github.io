@@ -7,60 +7,9 @@ so this thing is actually writing itself as you can see.
 
 ---
 
-[Tensor Networks and Probabilistic Graphical Models Duality](#tensor-networks-and-probabilistic-graphical-models-duality) abcd
+[Tensor Networks and Probabilistic Graphical Models Duality](#tensor-networks-and-probabilistic-graphical-models-duality) 
 
-[RNN](#rnn)
 
 # Tensor Networks and Probabilistic Graphical Models Duality
 
-
-
-
-
-sd
-
-s
-
-d
-s
-
-d
-
-sd
-
-s
-
-d
-
-s
-d
-s
-
-
-d
-
-s
-d
-s
-
-d
-sd
-s
-d
-
-s
-
-da
-
-d
-
-ad
-
-fas
-f
-a
-
-
-# RNN
-
-sacasac
+This is an equation $\sum{\frac{1}{n^2}}$
