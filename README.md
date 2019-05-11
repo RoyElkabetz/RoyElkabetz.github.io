@@ -14,6 +14,6 @@ so this thing is actually writing itself as you can see.
 
 This is an equation 
 
-$$
-\sum_{i=1}^m y^{(i)}
-$$
+katex.render("c = \\pm\\sqrt{a^2 + b^2}", element, {
+    throwOnError: false
+});
