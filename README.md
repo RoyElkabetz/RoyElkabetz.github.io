@@ -12,4 +12,8 @@ so this thing is actually writing itself as you can see.
 
 # Tensor Networks and Probabilistic Graphical Models Duality
 
-This is an equation $\sum_{i=1}^m y^{(i)}$
+This is an equation 
+
+$$
+\sum_{i=1}^m y^{(i)}
+$$
