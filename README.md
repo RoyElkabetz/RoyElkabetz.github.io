@@ -14,7 +14,6 @@ so this thing is actually writing itself as you can see.
 
 This is an equation 
 
-usemathjax: true
 $$
 \sum_{i=1}^m y^{(i)}
 $$
