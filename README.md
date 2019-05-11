@@ -1,3 +1,5 @@
+{% include mathjax.html %}
+
 ## Welcome
 ![](llama.jpg)
 
