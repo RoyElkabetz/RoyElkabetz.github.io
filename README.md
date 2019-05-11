@@ -8,6 +8,7 @@ so this thing is actually writing itself as you can see.
 ---
 
 [Tensor Networks and Probabilistic Graphical Models Duality](#tensor-networks-and-probabilistic-graphical-models-duality) abcd
+
 [RNN](#rnn)
 
 # Tensor Networks and Probabilistic Graphical Models Duality
@@ -17,24 +18,42 @@ so this thing is actually writing itself as you can see.
 
 
 sd
+
 s
-ds
+
+d
+s
+
+d
+
+sd
+
+s
+
+d
+
+s
+d
+s
+
+
+d
+
+s
+d
+s
+
 d
 sd
 s
 d
-sd
+
 s
-d
-sd
-s
-d
-sd
-s
-d
-s
+
 da
+
 d
+
 ad
 
 fas
@@ -44,4 +63,4 @@ a
 
 # RNN
 
-
+sacasac
