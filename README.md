@@ -20,6 +20,10 @@ where we get the marginal on the distribution over the ![](https://latex.codecog
 
 All the work done in the papper above is in the context of Markov Random Fields (MRF) graphical models, and what I would like to do next is to workout the duality notion between TN and [Factor Graphs](https://en.wikipedia.org/wiki/Factor_graph) (FG) which is another form of graphical models and between TN and Double-Edge Normal Factor Graphs (DEnFG) which is a form of a Normal Factor Graph. Let's work out the [MPS](https://en.wikipedia.org/wiki/Matrix_product_state) TN although the conclusions would be true for any general TN.
 
+Given a open boundary condition MPS as illustrated in the figure below
+![]()
+
+
 
 
 
