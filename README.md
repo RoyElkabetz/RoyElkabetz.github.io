@@ -26,5 +26,10 @@ In the figure above it is possible to see how the MPS TN transforms to a FG unde
 
 ![](https://latex.codecogs.com/gif.latex?P%5Cleft%20%28%20x_i%20%5Cright%20%29%3D%5Cfrac%7B1%7D%7BZ%7D%5Csum_%7B%5Cleft%20%5C%7B%20x_j%3Aj%5Cneq%20i%20%5Cright%20%5C%7D%7D%5Cprod_%7Bf%5Cin%5Cmathcal%7BF%7D%7Df%5Cleft%20%28%20x_%7B%5Cpartial%20f%7D%20%5Cright%20%29)
 
-where every factor is identical to its dual tensor ![](https://latex.codecogs.com/gif.latex?f%5Cleft%20%28%20x_%7B%5Cpartial%20f%7D%20%5Cright%20%29%3DT_C) such that ![](https://latex.codecogs.com/gif.latex?x_%7B%5Cpartial%20f%7D%20%3Dx_C).
+where every factor is identical to its dual tensor ![](https://latex.codecogs.com/gif.latex?f%5Cleft%20%28%20x_%7B%5Cpartial%20f%7D%20%5Cright%20%29%3DT_C) such that ![](https://latex.codecogs.com/gif.latex?x_%7B%5Cpartial%20f%7D%20%3Dx_C), so contraction and marginalization are the same also here. The only difference in the FG case is that the tansors and factors are identical where in the MRF case the edges of the TN become nodes and the tensors become *hyperedges*.
+
+## How can we use the duality for computations
+In general, given a TN, a common operation would be to calculate the expectation value of some local observable i.e the local operator ![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BO%7D_i) which is operating over the ![](https://latex.codecogs.com/gif.latex?i%5E%7Bth%7D) spin. In the MPS TN case it would look like that
+
+
 
