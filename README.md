@@ -36,8 +36,8 @@ In general, given a TN, a common operation would be to calculate the expectation
 
 To compute the expectation above one would need to contract the whole network. If for example the network maximal bond dimension is ![](https://latex.codecogs.com/gif.latex?D) and the spins dimension is ![](https://latex.codecogs.com/gif.latex?p) the contraction time would be ![](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28%20pD%5E4N%20%5Cright%20%29) where in the case above ![](https://latex.codecogs.com/gif.latex?N=7).
 
-### Loopy Belief Propagation (LBP)
-Another way to calculate this expectation is to transform the TN to a FG and then implement [LBP](https://en.wikipedia.org/wiki/Belief_propagation) which is a message-passing algorithm used for inference. For each time step we would make a full update over all the messages from nodes to factros and vice versa. The messages (up to normalization factors) are given by 
+### Loopy Belief Propagation ([LBP](https://en.wikipedia.org/wiki/Belief_propagation))
+Another way to calculate this expectation is to transform the TN to a FG and then implement LBP which is a message-passing algorithm used for inference. For each time step we would make a full update over all the messages from nodes to factros and vice versa. The messages (up to normalization factors) are given by 
 
 ![](https://latex.codecogs.com/gif.latex?m_%7Bi%5Crightarrow%20a%7D%5E%7Bt&plus;1%7D%5Cleft%28x_%7Bi%7D%5Cright%29%26%5Cpropto%5Cprod_%7Bb%5Cin%20N%5Cleft%28i%5Cright%29/a%7Dm_%7Bb%5Crightarrow%20i%7D%5E%7Bt%7D%5Cleft%28x_%7Bi%7D%5Cright%29%5C%5Cm_%7Ba%5Crightarrow%20i%7D%5E%7Bt&plus;1%7D%5Cleft%28x_%7Bi%7D%5Cright%29%26%5Cpropto%5Csum_%7B%5Cmathbf%7Bx%7D_%7Ba%7D/x_%7Bi%7D%7Df%5Cleft%28%5Cmathbf%7Bx%7D_%7Ba%7D%5Cright%29%5Cprod_%7Bj%5Cin%20N%5Cleft%28a%5Cright%29/i%7Dm_%7Bj%5Crightarrow%20a%7D%5E%7Bt%7D%5Cleft%28x_%7Bj%7D%5Cright%29)
 
