@@ -29,9 +29,17 @@ In the figure above it is possible to see how the MPS TN transforms to a FG unde
 where every factor is identical to its dual tensor ![](https://latex.codecogs.com/gif.latex?f%5Cleft%20%28%20x_%7B%5Cpartial%20f%7D%20%5Cright%20%29%3DT_C) such that ![](https://latex.codecogs.com/gif.latex?x_%7B%5Cpartial%20f%7D%20%3Dx_C), so contraction and marginalization are the same also here. The only difference in the FG case is that the tansors and factors are identical where in the MRF case the edges of the TN become nodes and the tensors become *hyperedges*.
 
 ## How can we utilize the duality for computations
+### TN Contraction
 In general, given a TN, a common operation would be to calculate the expectation value of some local observable i.e the local operator ![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BO%7D_i) which is operating over the ![](https://latex.codecogs.com/gif.latex?i%5E%7Bth%7D) spin. In the 7 spins MPS TN case, the local observeble expectation over the first spin would look like that
 
 ![](Figures/mps_expectetion-1.png)
 
 To compute the expectation above one would need to contract the whole network. If for example the network maximal bond dimension is ![](https://latex.codecogs.com/gif.latex?D) and the spins dimension is ![](https://latex.codecogs.com/gif.latex?p) the contraction time would be ![](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28%20pD%5E4N%20%5Cright%20%29) where in the case above ![](https://latex.codecogs.com/gif.latex?N=7).
+
+### Loopy Belief Propagation (LBP)
+Another way to calculate this expectation is to transform the TN to a FG and then implement [LBP](https://en.wikipedia.org/wiki/Belief_propagation) which is a message-passing algorithm used for inference. For each time step we would make a full update over all the messages from nodes to factros and vice versa. The messages (up to normalization factors) are given by 
+
+![](https://latex.codecogs.com/gif.latex?m_%7Bi%5Crightarrow%20a%7D%5E%7Bt&plus;1%7D%5Cleft%28x_%7Bi%7D%5Cright%29%26%5Cpropto%5Cprod_%7Bb%5Cin%20N%5Cleft%28i%5Cright%29/a%7Dm_%7Bb%5Crightarrow%20i%7D%5E%7Bt%7D%5Cleft%28x_%7Bi%7D%5Cright%29%5C%5Cm_%7Ba%5Crightarrow%20i%7D%5E%7Bt&plus;1%7D%5Cleft%28x_%7Bi%7D%5Cright%29%26%5Cpropto%5Csum_%7B%5Cmathbf%7Bx%7D_%7Ba%7D/x_%7Bi%7D%7Df%5Cleft%28%5Cmathbf%7Bx%7D_%7Ba%7D%5Cright%29%5Cprod_%7Bj%5Cin%20N%5Cleft%28a%5Cright%29/i%7Dm_%7Bj%5Crightarrow%20a%7D%5E%7Bt%7D%5Cleft%28x_%7Bj%7D%5Cright%29)
+
+where the ![](https://latex.codecogs.com/gif.latex?i)'s are the node indices and the ![](https://latex.codecogs.com/gif.latex?a)'s are the factor indices. In the case of tree FG there is a theorem
 
