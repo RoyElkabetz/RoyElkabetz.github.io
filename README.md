@@ -31,5 +31,7 @@ where every factor is identical to its dual tensor ![](https://latex.codecogs.co
 ## How can we use the duality for computations
 In general, given a TN, a common operation would be to calculate the expectation value of some local observable i.e the local operator ![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BO%7D_i) which is operating over the ![](https://latex.codecogs.com/gif.latex?i%5E%7Bth%7D) spin. In the MPS TN case it would look like that
 
+![](Figures/mps_expectetion-1.png)
+
 
 
