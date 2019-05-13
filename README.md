@@ -1,4 +1,4 @@
-## Welcome
+# Welcome
 ![](llama.jpg)
 
 So, why llama you ask?
@@ -22,7 +22,7 @@ All the work done in the papper above is in the context of Markov Random Fields 
  
 ![](Figures/MPS_factor_graph-1.png)
 
-In the figure above it is possible to see how the MPS TN transforms to a FG under the duality, where marginalization over the graph probability distribution is given by
+In the figure above it is possible to see how the MPS TN transforms to a FG under the duality, where every edge (bond) in the TN become a node (pink circle) with alphabet size same as the edge (bond) dimension. The ![](https://latex.codecogs.com/gif.latex?x_i) marginalization over the FG probability distribution is given by
 
 ![](https://latex.codecogs.com/gif.latex?P%5Cleft%20%28%20x_i%20%5Cright%20%29%3D%5Cfrac%7B1%7D%7BZ%7D%5Csum_%7B%5Cleft%20%5C%7B%20x_j%3Aj%5Cneq%20i%20%5Cright%20%5C%7D%7D%5Cprod_%7Bf%5Cin%5Cmathcal%7BF%7D%7Df%5Cleft%20%28%20x_%7B%5Cpartial%20f%7D%20%5Cright%20%29)
 
