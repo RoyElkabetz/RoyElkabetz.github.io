@@ -47,7 +47,9 @@ where the ![](https://latex.codecogs.com/gif.latex?i)'s are the node indices and
 
 If the FG has loops the LPB might not even converge and if it does there is no guarantee that the messages will converge to their true value. So, for loopy FG the beliefs are approximations to the true FG marginals. This is called the Bethe approximation which approximate the graph as if it was a tree. The quality of the approximation would depend on the number and size of loops in the graph.
 
-In the LBP does converge, it would take ![](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28%20tNdD%5Ed%20%5Cright%20%29) where ![](https://latex.codecogs.com/gif.latex?t) is the number of full update iterations, ![](https://latex.codecogs.com/gif.latex?N) is the number of spins, ![](https://latex.codecogs.com/gif.latex?d) is the maximal number of neighbors (for all factors) and ![](https://latex.codecogs.com/gif.latex?D) is the maximal node alphabet.  
+If the LBP does converge, it would take ![](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28%20tNdD%5Ed%20%5Cright%20%29) where ![](https://latex.codecogs.com/gif.latex?t) is the number of full update iterations, ![](https://latex.codecogs.com/gif.latex?N) is the number of spins, ![](https://latex.codecogs.com/gif.latex?d) is the maximal number of neighbors (for all factors) and ![](https://latex.codecogs.com/gif.latex?D) is the maximal node alphabet. 
+
+All this is working very well in general, the problem arises when our tensors in the TN have complex entries. The complex value entries objective is to describe the phases in the mixed state wavefunction. In that case the product of all the factros in the graph would be a complex valued tensor so it can't be interpreted as a probability distribution. This means that we need to find other graphical model formalism which can support probability interpretation of complex tensors.
 
 
 
