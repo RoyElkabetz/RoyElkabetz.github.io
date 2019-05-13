@@ -45,7 +45,9 @@ where the ![](https://latex.codecogs.com/gif.latex?i)'s are the node indices and
 
 ![](https://latex.codecogs.com/gif.latex?b%5Cleft%28x_%7Bi%7D%5Cright%29%26%5Cpropto%5Cprod_%7Ba%5Cin%5Cpartial%20i%7Dm_%7Ba%5Crightarrow%20i%7D%5Cleft%28x_%7Bi%7D%5Cright%29%5C%5Cb%5Cleft%28x_%7B%5Cpartial%20a%7D%5Cright%29%26%5Cpropto%20f%5Cleft%28x_%7B%5Cpartial%20a%7D%5Cright%29%5Cprod_%7Bi%5Cin%5Cpartial%20a%7Dm_%7Bi%5Crightarrow%20a%7D%5Cleft%28x_%7Bi%7D%5Cright%29)
 
-If the FG has loops the LPB might not even converge and if it does there is no guarantee that the messages will converge to their true value. So, for loopy FG the beliefs are approximations to the true FG marginals. This is called the Bethe approximation which approximate the graph as if it was a tree. The quality of the approximation would depend on the number and sizes of loops in the graph.
+If the FG has loops the LPB might not even converge and if it does there is no guarantee that the messages will converge to their true value. So, for loopy FG the beliefs are approximations to the true FG marginals. This is called the Bethe approximation which approximate the graph as if it was a tree. The quality of the approximation would depend on the number and size of loops in the graph.
+
+In the LBP does converge, it would take ![](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28%20tNdD%5Ed%20%5Cright%20%29) where ![](https://latex.codecogs.com/gif.latex?t) is the number of full update iterations, ![](https://latex.codecogs.com/gif.latex?N) is the number of spins, ![](https://latex.codecogs.com/gif.latex?d) is the maximal number of neighbors (for all factors) and ![](https://latex.codecogs.com/gif.latex?D) is the maximal node alphabet.  
 
 
 
