@@ -33,5 +33,5 @@ In general, given a TN, a common operation would be to calculate the expectation
 
 ![](Figures/mps_expectetion-1.png)
 
-
+To compute the expectation above one would need to contract the whole network. If for example the network maximal bond dimension is ![](https://latex.codecogs.com/gif.latex?D) and the spins dimension is ![](https://latex.codecogs.com/gif.latex?p) the contraction time would be ![](https://latex.codecogs.com/gif.latex?O%5Cleft%20%28%20pD%5E4N%20%5Cright%20%29) where in the case above ![](https://latex.codecogs.com/gif.latex?N=7).
 
