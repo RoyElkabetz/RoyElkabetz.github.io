@@ -28,7 +28,7 @@ In the figure above it is possible to see how the MPS TN transforms to a FG unde
 
 where every factor is identical to its dual tensor ![](https://latex.codecogs.com/gif.latex?f%5Cleft%20%28%20x_%7B%5Cpartial%20f%7D%20%5Cright%20%29%3DT_C) such that ![](https://latex.codecogs.com/gif.latex?x_%7B%5Cpartial%20f%7D%20%3Dx_C), so contraction and marginalization are the same also here. The only difference in the FG case is that the tansors and factors are identical where in the MRF case the edges of the TN become nodes and the tensors become *hyperedges*.
 
-## How can we use the duality for computations
+## How can we utilize the duality for computations
 In general, given a TN, a common operation would be to calculate the expectation value of some local observable i.e the local operator ![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BO%7D_i) which is operating over the ![](https://latex.codecogs.com/gif.latex?i%5E%7Bth%7D) spin. In the 7 spins MPS TN case, the local observeble expectation over the first spin would look like that
 
 ![](Figures/mps_expectetion-1.png)
