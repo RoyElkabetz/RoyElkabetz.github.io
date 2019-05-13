@@ -51,6 +51,9 @@ If the LBP does converge, it would take ![](https://latex.codecogs.com/gif.latex
 
 All this is working very well in general, the problem arises when our tensors in the TN have complex entries. The complex value entries objective is to describe the phases in the mixed state wavefunction. In that case the product of all the factros in the graph would be a complex valued tensor so it can't be interpreted as a probability distribution. This means that we need to find other graphical model formalism which can support probability interpretation of complex tensors.
 
+## Double-Edge normal Factor Graphs (DEnFG)
+The first time I was encountered with DEnFG was in the [papper](https://ieeexplore.ieee.org/abstract/document/8277985) of Michael X. Cao and Pascal O. Vontobel. Althogh to me it looks like their work has some gabs in the Bethe approximation reformulation, the method principle of handeling complex valued tensors is working well.
+
 
 
 
