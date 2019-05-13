@@ -41,5 +41,12 @@ Another way to calculate this expectation is to transform the TN to a FG and the
 
 ![](https://latex.codecogs.com/gif.latex?m_%7Bi%5Crightarrow%20a%7D%5E%7Bt&plus;1%7D%5Cleft%28x_%7Bi%7D%5Cright%29%26%5Cpropto%5Cprod_%7Bb%5Cin%20N%5Cleft%28i%5Cright%29/a%7Dm_%7Bb%5Crightarrow%20i%7D%5E%7Bt%7D%5Cleft%28x_%7Bi%7D%5Cright%29%5C%5Cm_%7Ba%5Crightarrow%20i%7D%5E%7Bt&plus;1%7D%5Cleft%28x_%7Bi%7D%5Cright%29%26%5Cpropto%5Csum_%7B%5Cmathbf%7Bx%7D_%7Ba%7D/x_%7Bi%7D%7Df%5Cleft%28%5Cmathbf%7Bx%7D_%7Ba%7D%5Cright%29%5Cprod_%7Bj%5Cin%20N%5Cleft%28a%5Cright%29/i%7Dm_%7Bj%5Crightarrow%20a%7D%5E%7Bt%7D%5Cleft%28x_%7Bj%7D%5Cright%29)
 
-where the ![](https://latex.codecogs.com/gif.latex?i)'s are the node indices and the ![](https://latex.codecogs.com/gif.latex?a)'s are the factor indices. In the case of tree FG there is a theorem
+where the ![](https://latex.codecogs.com/gif.latex?i)'s are the node indices and the ![](https://latex.codecogs.com/gif.latex?a)'s are the factor indices. In the case of tree FG there is a theorem by [Yedidia et al](http://www.merl.com/publications/docs/TR2001-22.pdf) which states that the Belief Propagation (no loops) messages converge to their *true value*. Later using the messages we can calculate the node and factor beliefs (marginals) via
+
+![](https://latex.codecogs.com/gif.latex?b%5Cleft%28x_%7Bi%7D%5Cright%29%26%5Cpropto%5Cprod_%7Ba%5Cin%5Cpartial%20i%7Dm_%7Ba%5Crightarrow%20i%7D%5Cleft%28x_%7Bi%7D%5Cright%29%5C%5Cb%5Cleft%28x_%7B%5Cpartial%20a%7D%5Cright%29%26%5Cpropto%20f%5Cleft%28x_%7B%5Cpartial%20a%7D%5Cright%29%5Cprod_%7Bi%5Cin%5Cpartial%20a%7Dm_%7Bi%5Crightarrow%20a%7D%5Cleft%28x_%7Bi%7D%5Cright%29)
+
+If the FG has loops the LPB might not even converge and if it does there is no guarantee that the messages will converge to their true value. So, for loopy FG the beliefs are approximations to the true FG marginals. This is called the Bethe approximation which approximate the graph as if it was a tree. The quality of the approximation would depend on the number and sizes of loops in the graph.
+
+
+
 
