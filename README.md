@@ -60,7 +60,7 @@ where ![](https://latex.codecogs.com/gif.latex?%5Crho%3D%5Cleft%7C%5Cpsi%5Cright
 
 ![](Figures/MPS_rho.jpg)
 
-where I put deferent colors just to illustrate batter the complex conjugate of the wavefunction TN which is in the upper side of the figure. Now, calculating the expectation of a local observable ![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BO%7D_1) would mean to contract the same network as in the figure above of MPS expectation. On the other hand, we could use the [DEnFG](##double-edge-normal-factor-graphs) formalism to calculate the same expectation (even for complex tensors) in the graphical models world.
+where I put deferent colors just to illustrate batter the complex conjugate of the wavefunction TN which is in the upper side of the figure. Now, calculating the expectation of a local observable ![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BO%7D_1) would mean to contract the same network as in the figure above of MPS expectation. On the other hand, we could use the [DEnFG](#double-edge-normal-factor-graphs-(denfg)) formalism to calculate the same expectation (even for complex tensors) in the graphical models world.
 
 ## Double-Edge normal Factor Graphs (DEnFG)
 The first time I was encountered with DEnFG was in the [papper](https://ieeexplore.ieee.org/abstract/document/8277985) of Michael X. Cao and Pascal O. Vontobel. Althogh to me it looks like their work has some gabs in the Bethe approximation reformulation, the method principle of handeling complex valued tensors is working well.
