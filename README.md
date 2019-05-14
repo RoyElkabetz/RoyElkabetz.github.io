@@ -56,15 +56,11 @@ If you recall, in quantum information theory the techniques to calculate an expe
 
 ![](https://latex.codecogs.com/gif.latex?%5Cleft%5Clangle%20%5Cmathcal%7BO%7D%5Cright%5Crangle%20_%7B%5Cpsi%7D%3D%5Cleft%5Clangle%20%5Cpsi%5Cleft%7C%5Cmathcal%7BO%7D%5Cright%7C%5Cpsi%5Cright%5Crangle%20%3D%5Ctext%7BTr%7D%5Cleft%5B%5Cleft%5Clangle%20%5Cpsi%5Cleft%7C%5Cmathcal%7BO%7D%5Cright%7C%5Cpsi%5Cright%5Crangle%20%5Cright%5D%3D%5Ctext%7BTr%7D%5Cleft%5B%5Cleft%7C%5Cpsi%5Cright%5Crangle%20%5Cleft%5Clangle%20%5Cpsi%5Cright%7C%5Cmathcal%7BO%7D%5Cright%5D%3D%5Ctext%7BTr%7D%5Cleft%5B%5Crho%5Cmathcal%7BO%7D%5Cright%5D)
 
-where ![](https://latex.codecogs.com/gif.latex?%5Crho%3D%5Cleft%7C%5Cpsi%5Cright%5Crangle%20%5Cleft%5Clangle%20%5Cpsi%5Cright%7C) is the density matrix. The density matrix is a [psd matrix](https://en.wikipedia.org/wiki/Definiteness_of_a_matrix#Definitions_for_complex_matrices) whixh means its eigenvalues are all larger or equal to zero. 
-
-*The idea is to use density matrices instead of wavefunctions*.
-
-In the TN world it actually does not matter, i.e the MPS density matrix would look like
+where ![](https://latex.codecogs.com/gif.latex?%5Crho%3D%5Cleft%7C%5Cpsi%5Cright%5Crangle%20%5Cleft%5Clangle%20%5Cpsi%5Cright%7C) is the density matrix. The density matrix is a [psd matrix](https://en.wikipedia.org/wiki/Definiteness_of_a_matrix#Definitions_for_complex_matrices) whixh means its eigenvalues are all larger or equal to zero. The purpose of all this is to show that the usage of density matrices instead of wavefunctions is much more efficient in the graphical models world. Although in the TN world it actually does not matter, i.e the MPS density matrix would look like
 
 ![](Figures/MPS_rho.jpg)
 
-where I deferent colors just to illustrate batter the complex conjugate of the wavefunction TN which is in the upper side of the figure. Now, calculating the expectation of a local observable ![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BO%7D_1) would mean to contract the same network as in the figure above of MPS expectation. On the other hand, we could use the [DEnFG](Double-Edge-normal-Factor-Graphs) formalism to calculate the same expectation (even for complex tensors) in the graphical models world.
+where I put deferent colors just to illustrate batter the complex conjugate of the wavefunction TN which is in the upper side of the figure. Now, calculating the expectation of a local observable ![](https://latex.codecogs.com/gif.latex?%5Cmathcal%7BO%7D_1) would mean to contract the same network as in the figure above of MPS expectation. On the other hand, we could use the [DEnFG](##Double-Edge-normal-Factor-Graphs) formalism to calculate the same expectation (even for complex tensors) in the graphical models world.
 
 ## Double-Edge normal Factor Graphs (DEnFG)
 The first time I was encountered with DEnFG was in the [papper](https://ieeexplore.ieee.org/abstract/document/8277985) of Michael X. Cao and Pascal O. Vontobel. Althogh to me it looks like their work has some gabs in the Bethe approximation reformulation, the method principle of handeling complex valued tensors is working well.
